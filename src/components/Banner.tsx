@@ -1,9 +1,11 @@
 import React from "react";
 import Checkin from "./Checkin";
+import Bannermobi from "./Bannermobi";
 
 const Banner = () => {
   return (
-    <div>
+    <>
+     <div className="hidden lg:block md:hidden">
       <div className="relative overflow-hidden bg-no-repeat bg-cover">
         <img src="/banner1.jpg" className="w-[100%] h-[400px]" />
       </div>
@@ -34,6 +36,12 @@ const Banner = () => {
         </div>
       </div>
     </div>
+    <div className="block lg:hidden md:block">
+      <Bannermobi/>
+    </div>
+    </>
+   
+
   );
 };
 
