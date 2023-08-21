@@ -2,6 +2,7 @@ import React from "react";
 import { FcSearch } from "react-icons/fc";
 import { CiViewList } from "react-icons/ci";
 import { BiSupport } from "react-icons/bi";
+import Search from "@/components/Search";
 
 const NavbarTop = () => {
   return (
@@ -24,9 +25,9 @@ const NavbarTop = () => {
             <img src="/iconlogo/handshake.png" width={20} />
             <p>Đặt chổ của tôi</p>
           </div>
-          <div className="flex gap-1">
-            <FcSearch className="text-xl" />
-            <p>Tìm kiếm</p>
+          <div className="">
+            
+            <Search/>
           </div>
         </div>
         <div className="flex gap-5 text-[14px] text-[#808991] font-semibold">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .CBlur {
-  margin-top: -100px;
+  margin-top: -150px;
   background: white;
   backdrop-filter: blur(50px);
 }

@@ -9,12 +9,12 @@ const Checkin = () => {
   return (
     <div>
       <div className="px-10 py-5 ">
-        <div className="flex gap-3">
+        {/* <div className="flex gap-3">
           <img src="/iconlogo/icon_hotel.png" />
           <p className="text-[18px] font-semibold mt-2">Đặt phòng khách sạn trực tuyến giá rẻ</p>
-        </div>
+        </div> */}
 
-        <div className="mt-5">
+        <div className="">
           <p className="font-semibold">Điạ điểm hoặc tên khách sạn</p>
           <Input
             prefix={<BiMap size={20} color="#9e9e9e" />}
