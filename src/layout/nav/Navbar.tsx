@@ -18,7 +18,7 @@ const Navbar = () => {
             <img src="/logo.png" className="w-[150px] h-[70px]" />
           </div>
           {navbarData.map((nav, i) => (
-            <Link href={nav.href} className="items-center justify-center flex">{nav.title}</Link>
+            <Link key={i + 1} href={nav.href} className="items-center justify-center flex">{nav.title}</Link>
           ))}
 
 
@@ -26,11 +26,11 @@ const Navbar = () => {
             <div className="mt-2">
               <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-yellow-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-5 border-yellow-400">
-                <BsTelephoneFill className="text-yellow-400" size={20} />
+                <BsTelephoneFill className="text-yellow-400 " size={20} />
               </span>
             </div>
 
-            <p className="text-2xl text-yellow-400 font-bold">0939044510</p>
+            <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-slate-50 to-pink-500 font-bold">0939044510</p>
           </div>
         </div>
       </nav>
