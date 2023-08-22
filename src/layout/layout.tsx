@@ -21,7 +21,7 @@ export default function Layout({
       <NavbarTop />
       <Navbar />
       <div className={inter.className}>{children}</div>
-      <div>
+      <div className="mt-20">
         <Footer />
       </div>
     </>

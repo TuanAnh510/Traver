@@ -15,8 +15,7 @@ const Navbar = () => {
           <div>
             <img src="/logo.png" className="w-[150px] h-[70px]" />
           </div>
-          <div className="mt-6">Vé máy bay</div>
-          <div className="mt-6">Du lịch</div>
+          
           <div className="mt-6">Khách sạn</div>
           <div className="mt-6">Combo</div>
           <div className="mt-6">Flash Sale</div>
