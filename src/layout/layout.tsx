@@ -17,9 +17,9 @@ export default function Layout({
     <>
       <Head>
         <title>{title}</title>
+        
       </Head>
-      <NavbarTop />
-      <Navbar />
+     
       <div className={inter.className}>{children}</div>
       <div className="mt-20">
         <Footer />
