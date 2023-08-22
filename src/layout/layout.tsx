@@ -21,9 +21,7 @@ export default function Layout({
       </Head>
      
       <div className={inter.className}>{children}</div>
-      <div className="mt-20">
-        <Footer />
-      </div>
+     
     </>
   );
 }

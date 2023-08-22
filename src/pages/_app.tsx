@@ -11,7 +11,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <NavbarTop />
       <Navbar />
       <Component {...pageProps} />
-      <Footer />
+      <div className="mt-20">
+        <Footer />
+      </div>
     </NextUIProvider>
   );
 }
