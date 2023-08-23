@@ -22,7 +22,7 @@ const Navbar = () => {
           ))}
 
 
-          <div className="mt-5 ml-36 gap-3 flex">
+          <div className="mt-5 ml-64 gap-3 flex">
             <div className="mt-2">
               <span className="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-yellow-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-5 border-yellow-400">

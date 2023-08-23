@@ -40,7 +40,7 @@ const Checkin = () => {
           </div>
         </div>
         <div className="text-right mt-10">
-            <button className="btnCheckin">TÌM KIẾM</button>
+            <button className="btnCheckin w-[200px] h-[50px]">TÌM KIẾM</button>
         </div>
       </div>
     </div>
