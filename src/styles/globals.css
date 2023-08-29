@@ -93,8 +93,9 @@
   bottom: 50px !important;
 }
 
+
 @media (max-width:600px) {
   .btnSeeMore {
-    margin: 0px 30%;
+    margin: 0px 35%;
   }
 }

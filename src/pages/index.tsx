@@ -5,6 +5,7 @@ import HotelCarousel from "@/components/Carousel/HotelCarousel";
 import Blogindex from "@/components/blog/Blogindex";
 
 import Layout from "@/layout/layout";
+import NavBottom from "@/layout/nav/NavBottom";
 
 
 export default function Page() {
@@ -12,10 +13,10 @@ export default function Page() {
     <Layout title={"Đặt vé máy bay, Tour du lịch, khách sạn giá rẻ 2023"}>
       <div>
         <Banner />
-        <div className="mt-20">
-          <div className="w-[80%] mx-auto">
-
-            <div>
+        <div className="">
+          <div className="w-[100%] lg:w-[80%] mx-auto">
+            <NavBottom />
+            <div className="mt-16">
               <HotelCarousel />
             </div>
             <div className="mt-16">
