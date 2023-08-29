@@ -5,7 +5,7 @@ import FooterMobi from "./FooterMobi";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#0c121c] hidden lg:block md:hidden">
+      <div className="bg-[#0c121c] hidden lg:block md:hidden mt-20">
         <div className="w-[70%] mx-auto flex gap-5 pb-5">
           <div className="w-[350px]">
             <div>

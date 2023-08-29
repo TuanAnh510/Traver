@@ -11,7 +11,7 @@ const Bannermobi = () => {
       <div className="bg-box relative overflow-hidden bg-no-repeat"></div>
       <div className="px-4 md:px-12 ml-auto mr-auto lg:w-[70%] w-full ">
         <div className="block rounded-lg absolute mt-[-40px]">
-          <div className="grid grid-cols-3 ml-5 gap-5">
+          <div className="grid grid-cols-3 ml-8 gap-5">
             <div className="flex flex-col shadow-2xl border-2 bg-white border-[#c7d6f5] w-[90px] h-[90px] rounded-xl py-2 hover:border-[#00a1fe] hover:border-2 ">
               <img
                 src="/iconlogo/icon_hotel.png"

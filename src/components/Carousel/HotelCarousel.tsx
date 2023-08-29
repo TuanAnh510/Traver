@@ -12,10 +12,13 @@ import {
 import Link from "next/link";
 
 import { dataroom } from "../../data/dataroom";
+import { BsArrowRight } from "react-icons/bs";
+
+
 
 const HotelCarousel = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     // arrows: true,
     fade: false,
@@ -51,13 +54,22 @@ const HotelCarousel = () => {
     ],
   };
 
+
+
   return (
     <div>
       <div>
-        <Slider {...settings}>
+        <div className="">
+          <div className="flex gap-2 text-center justify-center">
+            <h1 className="text-center mt-5 text-xl lg:text-3xl font-semibold">ƯU ĐÃI</h1>
+            <p className="text-center mt-5 text-xl lg:text-3xl font-extralight">DÀNH CHO BẠN</p>
+          </div>
+        </div>
+
+        <Slider {...settings} className="mt-5">
           {dataroom?.map((room, i) => (
-            <div>
-              <Card shadow="sm" key={i + 1}>
+            <div key={i}>
+              <Card shadow="sm" >
                 <CardBody className="overflow-visible p-0">
                   <img
                     width="100%"
@@ -83,6 +95,11 @@ const HotelCarousel = () => {
             </div>
           ))}
         </Slider>
+        <button className="btnSeeMore w-[120px] h-[40px] flex gap-2 py-2 justify-center ">
+          <p >Xem Thêm</p>
+          <BsArrowRight className="mt-1" />
+
+        </button>
       </div>
     </div>
   );
