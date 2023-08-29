@@ -39,6 +39,20 @@
   color: white;
 }
 
+/* blog */
+.btnSeeMoreBlog {
+  background-color: white;
+  border: 1px solid #ff5e1f;
+  color: #ff5e1f;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.btnSeeMoreBlog:hover {
+  background-color: #ff5e1f;
+  color: white;
+}
+
 .bg-box {
   background-color: #0064d2;
   border-radius: 0 0 100% 100%;

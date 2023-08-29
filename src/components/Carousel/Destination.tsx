@@ -12,10 +12,13 @@ import {
 import Link from "next/link";
 
 import { combo } from "../../data/combo";
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 
 const Destination = () => {
+    const sliderRef = useRef<Slider | null>(null);
+
+
     const settings = {
         dots: false,
         infinite: true,
@@ -53,9 +56,23 @@ const Destination = () => {
         ],
     };
 
+    const goToNextSlide = () => {
+        if (sliderRef.current) {
+            sliderRef.current.slickNext();
+        }
+    };
+
+    const goToPrevSlide = () => {
+        if (sliderRef.current) {
+            sliderRef.current.slickPrev();
+        }
+    };
+
+
+
     return (
         <div>
-            <div className="pb-20">
+            <div className="">
                 <div className="">
                     <div className="flex gap-2 text-center justify-center">
                         <h1 className="text-center mt-5 text-xl lg:text-3xl font-semibold">ĐỊA ĐIỂM</h1>
@@ -63,7 +80,7 @@ const Destination = () => {
                     </div>
                 </div>
 
-                <Slider {...settings} autoplay autoplaySpeed={5000} className="mt-5">
+                <Slider {...settings} autoplay autoplaySpeed={5000} className="mt-5" ref={sliderRef}>
 
 
                     <div className="mt-5" >
@@ -89,6 +106,14 @@ const Destination = () => {
                         <img src="/carousel/nghean.jpg" className="h-[400px] w-[100%] object-cover" />
                     </div>
                 </Slider>
+                {/* <div className="mt-10">
+                    <button onClick={goToPrevSlide} className="btnSeeMore w-[40px] h-[40px] py-2 justify-center">
+                        <BsArrowLeft />
+                    </button>
+                    <button onClick={goToNextSlide} className="btnSeeMore w-[40px] h-[40px] py-2 justify-center">
+                        <BsArrowRight />
+                    </button>
+                </div> */}
                 <div className="mt-10">
                     <button className="btnSeeMore w-[120px] h-[40px] flex gap-2 py-2 justify-center ">
                         <p >Xem Thêm</p>

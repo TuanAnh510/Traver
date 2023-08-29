@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import ComboCarousel from "@/components/Carousel/ComboCarousel";
 import Destination from "@/components/Carousel/Destination";
 import HotelCarousel from "@/components/Carousel/HotelCarousel";
+import Blogindex from "@/components/blog/Blogindex";
 
 import Layout from "@/layout/layout";
 
@@ -12,7 +13,7 @@ export default function Page() {
       <div>
         <Banner />
         <div className="mt-20">
-          <div className="w-[70%] mx-auto">
+          <div className="w-[80%] mx-auto">
 
             <div>
               <HotelCarousel />
@@ -22,6 +23,9 @@ export default function Page() {
             </div>
             <div className="mt-16">
               <Destination />
+            </div>
+            <div className="mt-16">
+              <Blogindex />
             </div>
           </div>
         </div>
